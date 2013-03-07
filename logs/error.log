@@ -1,0 +1,190 @@
+Starting the Apache2.4 service
+The Apache2.4 service is running.
+[mpm_winnt:notice] [pid 4912:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 05:59:19.758999 2013] [mpm_winnt:notice] [pid 4912:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 05:59:19.758999 2013] [core:notice] [pid 4912:tid 360] AH00094: Command line: 'C:\\BitNami\\wampstack\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2'
+[Thu Mar 07 05:59:19.760999 2013] [mpm_winnt:notice] [pid 4912:tid 360] AH00418: Parent: Created child process 3064
+[Thu Mar 07 05:59:21.275085 2013] [mpm_winnt:notice] [pid 3064:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 06:00:09.368836 2013] [mpm_winnt:notice] [pid 4912:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 06:00:11.368951 2013] [mpm_winnt:notice] [pid 3064:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 06:00:11.390952 2013] [mpm_winnt:notice] [pid 4912:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 06:00:21.229515 2013] [mpm_winnt:notice] [pid 3604:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 06:00:21.229515 2013] [mpm_winnt:notice] [pid 3604:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 06:00:21.229515 2013] [core:notice] [pid 3604:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 06:00:21.238515 2013] [mpm_winnt:notice] [pid 3604:tid 360] AH00418: Parent: Created child process 3528
+[Thu Mar 07 06:00:22.807605 2013] [mpm_winnt:notice] [pid 3528:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 06:02:07.518594 2013] [mpm_winnt:notice] [pid 3604:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 06:02:09.518708 2013] [mpm_winnt:notice] [pid 3528:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 06:02:09.556711 2013] [mpm_winnt:notice] [pid 3604:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 06:04:28.189640 2013] [mpm_winnt:notice] [pid 7112:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 06:04:28.189640 2013] [mpm_winnt:notice] [pid 7112:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 06:04:28.189640 2013] [core:notice] [pid 7112:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 06:04:28.198640 2013] [mpm_winnt:notice] [pid 7112:tid 360] AH00418: Parent: Created child process 5276
+[Thu Mar 07 06:04:29.742729 2013] [mpm_winnt:notice] [pid 5276:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 06:30:26.520784 2013] [:error] [pid 5276:tid 1000] [client 127.0.0.1:56137] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:32:41.112489 2013] [mpm_winnt:notice] [pid 7112:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 06:32:43.113603 2013] [mpm_winnt:notice] [pid 5276:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 06:32:43.158606 2013] [mpm_winnt:notice] [pid 7112:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 06:32:45.349731 2013] [mpm_winnt:notice] [pid 3436:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 06:32:45.349731 2013] [mpm_winnt:notice] [pid 3436:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 06:32:45.349731 2013] [core:notice] [pid 3436:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 06:32:45.359732 2013] [mpm_winnt:notice] [pid 3436:tid 360] AH00418: Parent: Created child process 4920
+[Thu Mar 07 06:32:47.098831 2013] [mpm_winnt:notice] [pid 4920:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 06:32:51.366075 2013] [:error] [pid 4920:tid 1000] [client 127.0.0.1:56218] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:32:54.204238 2013] [:error] [pid 4920:tid 1000] [client 127.0.0.1:56221] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:32:56.885391 2013] [:error] [pid 4920:tid 996] [client 127.0.0.1:56222] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:38:14.783601 2013] [mpm_winnt:notice] [pid 3436:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 06:38:16.783716 2013] [mpm_winnt:notice] [pid 4920:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 06:38:16.817718 2013] [mpm_winnt:notice] [pid 3436:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 06:38:19.413866 2013] [mpm_winnt:notice] [pid 2328:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 06:38:19.413866 2013] [mpm_winnt:notice] [pid 2328:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 06:38:19.413866 2013] [core:notice] [pid 2328:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 06:38:19.423867 2013] [mpm_winnt:notice] [pid 2328:tid 360] AH00418: Parent: Created child process 7844
+[Thu Mar 07 06:38:20.956955 2013] [mpm_winnt:notice] [pid 7844:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 06:38:28.939411 2013] [:error] [pid 7844:tid 1000] [client 127.0.0.1:56425] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:38:32.144594 2013] [:error] [pid 7844:tid 1000] [client 127.0.0.1:56428] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:38:34.755744 2013] [:error] [pid 7844:tid 996] [client 127.0.0.1:56429] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:38:37.219885 2013] [:error] [pid 7844:tid 1000] [client 127.0.0.1:56434] PHP Parse error:  syntax error, unexpected '?>' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 10
+[Thu Mar 07 06:45:42.383204 2013] [:error] [pid 7844:tid 1000] [client 127.0.0.1:56585] PHP Parse error:  syntax error, unexpected ';' in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 11
+[Thu Mar 07 07:35:53.732539 2013] [:error] [pid 7844:tid 984] [client 127.0.0.1:57992] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in F:\\Proyectos\\Webs\\cakephp\\app\\View\\Posts\\index.ctp on line 2
+[Thu Mar 07 08:00:38.695516 2013] [mpm_winnt:notice] [pid 2328:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:00:40.695631 2013] [mpm_winnt:notice] [pid 7844:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:01:08.696232 2013] [mpm_winnt:notice] [pid 2328:tid 360] AH00431: Parent: Forcing termination of child process 230
+[Thu Mar 07 08:04:19.208129 2013] [mpm_winnt:notice] [pid 6252:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:04:19.208129 2013] [mpm_winnt:notice] [pid 6252:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:04:19.208129 2013] [core:notice] [pid 6252:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:04:19.217129 2013] [mpm_winnt:notice] [pid 6252:tid 360] AH00418: Parent: Created child process 7120
+[Thu Mar 07 08:04:20.772218 2013] [mpm_winnt:notice] [pid 7120:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:05:57.958777 2013] [mpm_winnt:notice] [pid 6252:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:05:59.958891 2013] [mpm_winnt:notice] [pid 7120:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:05:59.991893 2013] [mpm_winnt:notice] [pid 6252:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:06:01.615986 2013] [mpm_winnt:notice] [pid 7944:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:06:01.615986 2013] [mpm_winnt:notice] [pid 7944:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:06:01.615986 2013] [core:notice] [pid 7944:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:06:01.623987 2013] [mpm_winnt:notice] [pid 7944:tid 360] AH00418: Parent: Created child process 6300
+[Thu Mar 07 08:06:03.189076 2013] [mpm_winnt:notice] [pid 6300:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:06:07.478322 2013] [core:alert] [pid 6300:tid 1000] [client 127.0.0.1:58766] F:/Proyectos/Webs/cakephp/app/webroot/.htaccess: RewriteBase: argument is not a valid URL
+[Thu Mar 07 08:06:08.573384 2013] [core:alert] [pid 6300:tid 1000] [client 127.0.0.1:58767] F:/Proyectos/Webs/cakephp/app/webroot/.htaccess: RewriteBase: argument is not a valid URL
+[Thu Mar 07 08:19:04.263751 2013] [mpm_winnt:notice] [pid 7944:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:19:06.265866 2013] [mpm_winnt:notice] [pid 6300:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:19:06.303868 2013] [mpm_winnt:notice] [pid 7944:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:19:08.785011 2013] [mpm_winnt:notice] [pid 1620:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:19:08.785011 2013] [mpm_winnt:notice] [pid 1620:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:19:08.785011 2013] [core:notice] [pid 1620:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:19:08.794012 2013] [mpm_winnt:notice] [pid 1620:tid 360] AH00418: Parent: Created child process 6120
+[Thu Mar 07 08:19:10.398106 2013] [mpm_winnt:notice] [pid 6120:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:22:52.862831 2013] [mpm_winnt:notice] [pid 1620:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:22:54.862945 2013] [mpm_winnt:notice] [pid 6120:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:22:54.896947 2013] [mpm_winnt:notice] [pid 1620:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:22:56.745053 2013] [mpm_winnt:notice] [pid 7224:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:22:56.745053 2013] [mpm_winnt:notice] [pid 7224:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:22:56.745053 2013] [core:notice] [pid 7224:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:22:56.753053 2013] [mpm_winnt:notice] [pid 7224:tid 360] AH00418: Parent: Created child process 6524
+[Thu Mar 07 08:22:58.281141 2013] [mpm_winnt:notice] [pid 6524:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:25:51.967076 2013] [mpm_winnt:notice] [pid 7224:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:25:53.967191 2013] [mpm_winnt:notice] [pid 6524:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:25:54.002193 2013] [mpm_winnt:notice] [pid 7224:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:25:55.639286 2013] [mpm_winnt:notice] [pid 6064:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:25:55.639286 2013] [mpm_winnt:notice] [pid 6064:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:25:55.639286 2013] [core:notice] [pid 6064:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:25:55.648287 2013] [mpm_winnt:notice] [pid 6064:tid 360] AH00418: Parent: Created child process 5440
+[Thu Mar 07 08:25:57.294381 2013] [mpm_winnt:notice] [pid 5440:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:29:47.583553 2013] [mpm_winnt:notice] [pid 6064:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:29:49.583667 2013] [mpm_winnt:notice] [pid 5440:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:29:49.617669 2013] [mpm_winnt:notice] [pid 6064:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:29:51.410773 2013] [mpm_winnt:notice] [pid 7392:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:29:51.410773 2013] [mpm_winnt:notice] [pid 7392:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:29:51.410773 2013] [core:notice] [pid 7392:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:29:51.420774 2013] [mpm_winnt:notice] [pid 7392:tid 360] AH00418: Parent: Created child process 5240
+[Thu Mar 07 08:29:53.216876 2013] [mpm_winnt:notice] [pid 5240:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:30:56.550499 2013] [mpm_winnt:notice] [pid 7392:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:30:58.551613 2013] [mpm_winnt:notice] [pid 5240:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:30:58.583615 2013] [mpm_winnt:notice] [pid 7392:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:31:00.248710 2013] [mpm_winnt:notice] [pid 6800:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:31:00.248710 2013] [mpm_winnt:notice] [pid 6800:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:31:00.249710 2013] [core:notice] [pid 6800:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:31:00.257711 2013] [mpm_winnt:notice] [pid 6800:tid 360] AH00418: Parent: Created child process 5060
+[Thu Mar 07 08:31:01.755797 2013] [mpm_winnt:notice] [pid 5060:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:31:33.878634 2013] [mpm_winnt:notice] [pid 6800:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:31:35.879748 2013] [mpm_winnt:notice] [pid 5060:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:31:35.916751 2013] [mpm_winnt:notice] [pid 6800:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:31:37.574845 2013] [mpm_winnt:notice] [pid 7128:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:31:37.574845 2013] [mpm_winnt:notice] [pid 7128:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:31:37.574845 2013] [core:notice] [pid 7128:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:31:37.584846 2013] [mpm_winnt:notice] [pid 7128:tid 360] AH00418: Parent: Created child process 3768
+[Thu Mar 07 08:31:39.074931 2013] [mpm_winnt:notice] [pid 3768:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:32:21.039331 2013] [mpm_winnt:notice] [pid 7128:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:32:25.439583 2013] [mpm_winnt:notice] [pid 3768:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:32:25.475585 2013] [mpm_winnt:notice] [pid 7128:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:32:27.187683 2013] [mpm_winnt:notice] [pid 5240:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:32:27.187683 2013] [mpm_winnt:notice] [pid 5240:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:32:27.187683 2013] [core:notice] [pid 5240:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:32:27.196684 2013] [mpm_winnt:notice] [pid 5240:tid 360] AH00418: Parent: Created child process 5472
+[Thu Mar 07 08:32:28.726771 2013] [mpm_winnt:notice] [pid 5472:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:34:09.502535 2013] [mpm_winnt:notice] [pid 5240:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:34:11.502650 2013] [mpm_winnt:notice] [pid 5472:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:34:11.536651 2013] [mpm_winnt:notice] [pid 5240:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:34:13.199747 2013] [mpm_winnt:notice] [pid 6156:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:34:13.199747 2013] [mpm_winnt:notice] [pid 6156:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:34:13.199747 2013] [core:notice] [pid 6156:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:34:13.208747 2013] [mpm_winnt:notice] [pid 6156:tid 360] AH00418: Parent: Created child process 4612
+[Thu Mar 07 08:34:14.782837 2013] [mpm_winnt:notice] [pid 4612:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:39:01.830255 2013] [mpm_winnt:notice] [pid 6156:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:39:03.830370 2013] [mpm_winnt:notice] [pid 4612:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:39:03.864372 2013] [mpm_winnt:notice] [pid 6156:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:39:05.524467 2013] [mpm_winnt:notice] [pid 4824:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:39:05.524467 2013] [mpm_winnt:notice] [pid 4824:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:39:05.524467 2013] [core:notice] [pid 4824:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:39:05.533467 2013] [mpm_winnt:notice] [pid 4824:tid 360] AH00418: Parent: Created child process 4348
+[Thu Mar 07 08:39:07.232564 2013] [mpm_winnt:notice] [pid 4348:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:41:26.807548 2013] [mpm_winnt:notice] [pid 4824:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:41:28.807662 2013] [mpm_winnt:notice] [pid 4348:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:41:28.844664 2013] [mpm_winnt:notice] [pid 4824:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:41:30.533761 2013] [mpm_winnt:notice] [pid 1872:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:41:30.533761 2013] [mpm_winnt:notice] [pid 1872:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:41:30.533761 2013] [core:notice] [pid 1872:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:41:30.542761 2013] [mpm_winnt:notice] [pid 1872:tid 360] AH00418: Parent: Created child process 3840
+[Thu Mar 07 08:41:32.210857 2013] [mpm_winnt:notice] [pid 3840:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:42:38.350640 2013] [mpm_winnt:notice] [pid 1872:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:42:40.350754 2013] [mpm_winnt:notice] [pid 3840:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:42:40.386756 2013] [mpm_winnt:notice] [pid 1872:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:42:42.066852 2013] [mpm_winnt:notice] [pid 6112:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:42:42.066852 2013] [mpm_winnt:notice] [pid 6112:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:42:42.066852 2013] [core:notice] [pid 6112:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:42:42.076853 2013] [mpm_winnt:notice] [pid 6112:tid 360] AH00418: Parent: Created child process 2036
+[Thu Mar 07 08:42:43.695945 2013] [mpm_winnt:notice] [pid 2036:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:43:26.056368 2013] [mpm_winnt:notice] [pid 6112:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:43:28.056483 2013] [mpm_winnt:notice] [pid 2036:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:43:28.090485 2013] [mpm_winnt:notice] [pid 6112:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:43:29.855585 2013] [mpm_winnt:notice] [pid 6564:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:43:29.855585 2013] [mpm_winnt:notice] [pid 6564:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:43:29.855585 2013] [core:notice] [pid 6564:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:43:29.863586 2013] [mpm_winnt:notice] [pid 6564:tid 360] AH00418: Parent: Created child process 5148
+[Thu Mar 07 08:43:31.523681 2013] [mpm_winnt:notice] [pid 5148:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:46:38.048353 2013] [mpm_winnt:notice] [pid 6564:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:46:40.048467 2013] [mpm_winnt:notice] [pid 5148:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:46:40.080469 2013] [mpm_winnt:notice] [pid 6564:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:46:41.872572 2013] [mpm_winnt:notice] [pid 2568:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:46:41.872572 2013] [mpm_winnt:notice] [pid 2568:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:46:41.872572 2013] [core:notice] [pid 2568:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:46:41.881572 2013] [mpm_winnt:notice] [pid 2568:tid 360] AH00418: Parent: Created child process 2040
+[Thu Mar 07 08:46:43.445662 2013] [mpm_winnt:notice] [pid 2040:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:47:42.858060 2013] [mpm_winnt:notice] [pid 2568:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:47:44.859174 2013] [mpm_winnt:notice] [pid 2040:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:47:44.895176 2013] [mpm_winnt:notice] [pid 2568:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:47:46.530270 2013] [mpm_winnt:notice] [pid 1668:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:47:46.530270 2013] [mpm_winnt:notice] [pid 1668:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:47:46.530270 2013] [core:notice] [pid 1668:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:47:46.539271 2013] [mpm_winnt:notice] [pid 1668:tid 360] AH00418: Parent: Created child process 3768
+[Thu Mar 07 08:47:48.098360 2013] [mpm_winnt:notice] [pid 3768:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 08:50:14.207717 2013] [mpm_winnt:notice] [pid 1668:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 08:50:16.207831 2013] [mpm_winnt:notice] [pid 3768:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 08:50:16.242833 2013] [mpm_winnt:notice] [pid 1668:tid 360] AH00430: Parent: Child process exited successfully.
+[Thu Mar 07 08:50:17.884928 2013] [mpm_winnt:notice] [pid 6368:tid 360] AH00455: Apache/2.4.3 (Win32) OpenSSL/1.0.1c PHP/5.4.0 configured -- resuming normal operations
+[Thu Mar 07 08:50:17.884928 2013] [mpm_winnt:notice] [pid 6368:tid 360] AH00456: Server built: Aug 18 2012 12:41:37
+[Thu Mar 07 08:50:17.884928 2013] [core:notice] [pid 6368:tid 360] AH00094: Command line: 'C:\\BitNami\\WAMPST~1\\apache2\\bin\\httpd.exe -d C:/BitNami/wampstack/apache2 -f C:\\BitNami\\WAMPST~1\\apache2\\conf\\httpd.conf'
+[Thu Mar 07 08:50:17.894929 2013] [mpm_winnt:notice] [pid 6368:tid 360] AH00418: Parent: Created child process 7900
+[Thu Mar 07 08:50:19.431017 2013] [mpm_winnt:notice] [pid 7900:tid 252] AH00354: Child: Starting 64 worker threads.
+[Thu Mar 07 09:03:07.775964 2013] [mpm_winnt:notice] [pid 6368:tid 360] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Mar 07 09:03:09.777078 2013] [mpm_winnt:notice] [pid 7900:tid 252] AH00364: Child: All worker threads have exited.
+[Thu Mar 07 09:03:09.820081 2013] [mpm_winnt:notice] [pid 6368:tid 360] AH00430: Parent: Child process exited successfully.
