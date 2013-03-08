@@ -349,3 +349,7 @@ The Apache2.4 service is running.
 [Thu Mar 07 19:27:46 2013] [notice] Child 7384: All worker threads have exited.
 [Thu Mar 07 19:27:46 2013] [notice] Child 7384: Child process is exiting
 [Thu Mar 07 19:27:46 2013] [notice] Parent: Child process exited successfully.
+[Fri Mar 08 00:47:32.883786 2013] [core:error] [pid 2304:tid 1012] [client 127.0.0.1:53332] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace., referer: http://127.0.0.1:8080/cakephp/index.php/posts
+[Fri Mar 08 00:48:00.611372 2013] [core:error] [pid 2304:tid 1012] [client 127.0.0.1:53358] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use 'LimitInternalRecursion' to increase the limit if necessary. Use 'LogLevel debug' to get a backtrace.
+[Fri Mar 08 02:52:56.205465 2013] [:error] [pid 4748:tid 1000] [client 127.0.0.1:56895] PHP Fatal error:  Call to undefined function is() in F:\\Proyectos\\Webs\\cakephp_test\\app\\Controller\\PostsController.php on line 37, referer: http://blog.cake-php.com:8080/posts/
+[Fri Mar 08 02:52:56.345473 2013] [:error] [pid 4748:tid 992] [client 127.0.0.1:56896] PHP Fatal error:  Call to undefined function is() in F:\\Proyectos\\Webs\\cakephp_test\\app\\Controller\\PostsController.php on line 37, referer: http://blog.cake-php.com:8080/posts/
