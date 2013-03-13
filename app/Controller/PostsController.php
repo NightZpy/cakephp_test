@@ -52,5 +52,13 @@
 				$this->redirect(array('action' => 'index'));
 			}
 		}
+
+		public $paginate = array(
+		    'fields' => array('Post.id', 'Post.created'),
+		    'limit' => 10,
+		    'order' => array(
+		        'Post.title' => 'asc'
+		    )
+		);		
 	}
 ?>
