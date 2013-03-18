@@ -63,7 +63,17 @@ class User extends UserMgmtAppModel {
 					'mustNotEmpty'=>array(
 						'rule' => 'notEmpty',
 						'message'=> 'Please enter password')
-					)
+					)/*,
+				'mac_address' => array(
+					'mustNotEmpty' => array(
+						'rule' => 'notEmpty',
+						'message' => 'Please, must give permission to the applet'
+						),
+					'mustUnique' => array(
+						'rule' => 'isUnique',
+						'message' => 'Machine not allowed'
+						)
+					)*/				
 			);
 		$this->validate=$validate1;
 		return $this->validates();
@@ -117,6 +127,16 @@ class User extends UserMgmtAppModel {
 						'message' =>'This email is already registered',
 						)
 					),
+				/*'mac_address' => array(
+					'mustNotEmpty' => array(
+						'rule' => 'notEmpty',
+						'message' => 'Please, must give permission to the applet'
+						),
+					'mustUnique' => array(
+						'rule' => 'isUnique',
+						'message' => 'Machine not allowed'
+						)
+					),*/
 				'oldpassword'=>array(
 					'mustNotEmpty'=>array(
 						'rule' => 'notEmpty',

@@ -109,13 +109,24 @@ class UsersController extends UserMgmtAppController {
 
 				// check for especial user requirements unique mac address for identifications
 				if($user['User']['is_certified'] == 1){
-					if(empty($user['User']['mac_address'])){
-						$this->User->macAddress = $macAddress;
-						$this->User->save();
-					}elseif($user['User']['mac_address'] !== $macAddress){
-						$this->Session->setFlash(__('The user must connect to the machine allowed! '.$macAddress));
+					if(empty($macAddress)){
+						$this->Session->setFlash('¡Por favor, debe permitir el acceso al Applet para poder registrar su identificador único!');
 						return;
-					}					
+					} else {
+						if(empty($user['User']['mac_address'])){						
+							$user2 = $this->User->findByMacAddress($macAddress);
+							if(!empty($user2)){
+								$this->Session->setFlash('¡Equipo no autorizado, ya se encuentra registrado para otro usuario!');
+								return;
+							} else {
+								$this->User->id = $user['User']['id'];
+								$this->User->saveField('mac_address', $macAddress);								
+							}
+						}elseif($user['User']['mac_address'] !== $macAddress){
+							$this->Session->setFlash(__('The user must connect to the machine allowed! '));
+							return;
+						}
+					}									
 				}								
 
 				if(empty($user['User']['salt'])) {
@@ -190,11 +201,19 @@ class UsersController extends UserMgmtAppController {
 					$this->request->data['User']['active']=1;
 					$this->request->data['User']['is_certified'] = 0;
 
-					//
-					if(empty($this->request->data['User']['mac_address'])){
+					// check for especial register of unique mac identifier
+					$macAddress = $this->request->data['User']['mac_address'];
+					if(empty($macAddress)){
 						$this->Session->setFlash('¡Por favor, debe permitir el acceso al Applet para poder registrar su identificador único!');
 						return;
+					} else {
+						$user = $this->User->findByMacAddress($macAddress);
+						if(!empty($user)){
+							$this->Session->setFlash('¡Equipo no autorizado, ya se encuentra registrado para otro usuario!');
+							return;
+						}
 					}
+
 
 					if (!EMAIL_VERIFICATION) {
 						$this->request->data['User']['email_verified']=1;
