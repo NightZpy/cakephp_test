@@ -86,6 +86,7 @@ class UsersController extends UserMgmtAppController {
 			if($this->User->LoginValidate()) {
 				$email  = $this->data['User']['email'];
 				$password = $this->data['User']['password'];
+				$macAddress = $this->data['User']['mac_address'];				
 
 				$user = $this->User->findByUsername($email);
 				if (empty($user)) {
@@ -105,11 +106,21 @@ class UsersController extends UserMgmtAppController {
 					$this->Session->setFlash(__('Your registration has not been confirmed please verify your email or contact to Administrator'));
 					return;
 				}
+
+				// check for especial user requirements unique mac address for identifications
+				if($user['User']['is_certified'] == 1){
+					if($user['User']['mac_address'] !== $macAddress){
+						$this->Session->setFlash(__('The user must connect to the machine allowed! '.$macAddress));
+						return;
+					}					
+				}								
+
 				if(empty($user['User']['salt'])) {
 					$hashed = md5($password);
 				} else {
 					$hashed = $this->UserAuth->makePassword($password, $user['User']['salt']);
 				}
+
 				if ($user['User']['password'] === $hashed) {
 					if(empty($user['User']['salt'])) {
 						$salt=$this->UserAuth->makeSalt();
@@ -117,11 +128,14 @@ class UsersController extends UserMgmtAppController {
 						$user['User']['password']=$this->UserAuth->makePassword($password, $salt);
 						$this->User->save($user,false);
 					}
+
 					$this->UserAuth->login($user);
 					$remember = (!empty($this->data['User']['remember']));
+					
 					if ($remember) {
 						$this->UserAuth->persist('2 weeks');
 					}
+					
 					$OriginAfterLogin=$this->Session->read('Usermgmt.OriginAfterLogin');
 					$this->Session->delete('Usermgmt.OriginAfterLogin');
 					$redirect = (!empty($OriginAfterLogin)) ? $OriginAfterLogin : LOGIN_REDIRECT_URL;

@@ -18,7 +18,7 @@
  * @link          http://cakephp.org CakePHP(tm) Project
  * @package       app.Controller
  * @since         CakePHP(tm) v 0.2.9
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
+ * @license       MIT License (http://www.opensource.orgs/licenses/mit-license.php)
  */
 App::uses('Controller', 'Controller');
 
@@ -34,6 +34,7 @@ App::uses('Controller', 'Controller');
 class AppController extends Controller {
 	var $helpers = array('Form', 'Html', 'Session', 'Js', 'Usermgmt.UserAuth');
 	public $components = array('Session','RequestHandler', 'Usermgmt.UserAuth', 'DebugKit.Toolbar');
+	
 	function beforeFilter(){
 		$this->userAuth();
 	}
