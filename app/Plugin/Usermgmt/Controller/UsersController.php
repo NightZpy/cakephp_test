@@ -109,7 +109,10 @@ class UsersController extends UserMgmtAppController {
 
 				// check for especial user requirements unique mac address for identifications
 				if($user['User']['is_certified'] == 1){
-					if($user['User']['mac_address'] !== $macAddress){
+					if(empty($user['User']['mac_address'])){
+						$this->User->macAddress = $macAddress;
+						$this->User->save();
+					}elseif($user['User']['mac_address'] !== $macAddress){
 						$this->Session->setFlash(__('The user must connect to the machine allowed! '.$macAddress));
 						return;
 					}					
@@ -185,6 +188,14 @@ class UsersController extends UserMgmtAppController {
 						return;
 					}
 					$this->request->data['User']['active']=1;
+					$this->request->data['User']['is_certified'] = 0;
+
+					//
+					if(empty($this->request->data['User']['mac_address'])){
+						$this->Session->setFlash('¡Por favor, debe permitir el acceso al Applet para poder registrar su identificador único!');
+						return;
+					}
+
 					if (!EMAIL_VERIFICATION) {
 						$this->request->data['User']['email_verified']=1;
 					}

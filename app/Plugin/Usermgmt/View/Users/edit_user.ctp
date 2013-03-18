@@ -62,6 +62,11 @@
 						<div style="clear:both"></div>
 					</div>
 					<div>
+						<div class="umstyle3"><?php echo __('Limited Connection');?><font color='red'>*</font></div>
+						<div class="umstyle4" ><?php echo $this->Form->input("is_certified", array('label' => false))?></div>
+						<div style="clear:both"></div>
+					</div>					
+					<div>
 						<div class="umstyle3"></div>
 						<div class="umstyle4"><?php echo $this->Form->Submit(__('Update User'));?></div>
 						<div style="clear:both"></div>

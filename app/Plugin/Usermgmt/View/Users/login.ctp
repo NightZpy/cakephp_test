@@ -38,7 +38,7 @@
 			        $('#UserLoginForm').submit(submitForm);
     			});
 			</script>
-			<APPLET name="applet_info" id="get_mac" code="get_hw_info.GetInfo" archive="/files/Get_HW_Info.jar" width=150 height=200></APPLET>
+			<applet name="applet_info" id="get_mac" code="get_hw_info.GetInfo" archive="/files/Get_HW_Info.jar" width=150 height=200></applet>
 			<div class="umhr"></div>
 			<div class="um_box_mid_content_mid" id="login">
 				<div class="um_box_mid_content_mid_left">

@@ -69,6 +69,17 @@
 								</td>
 							</tr>
 							<tr>
+								<td><strong><?php echo __('Limited Connection');?></strong></td>
+								<td><?php
+										if($user['User']['is_certified']==1){
+											echo 'Limited';								
+										} else {
+											echo 'No limited';
+										}
+										?>
+								</td>
+							</tr>
+							<tr>
 								<td><strong><?php echo __('Status');?></strong></td>
 								<td><?php
 										if ($user['User']['active']) {

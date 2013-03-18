@@ -41,6 +41,7 @@
 							<th><?php echo __('Group');?></th>
 							<th><?php echo __('Email Verified');?></th>
 							<th><?php echo __('Status');?></th>
+							<th><?php echo __('Limited Connection');?></th>
 							<th><?php echo __('Created');?></th>
 							<th><?php echo __('Action');?></th>
 						</tr>
@@ -70,6 +71,13 @@
 									echo "Inactive";
 								}
 								echo"</td>";
+								echo "<td>";
+								if($row['User']['is_certified']==1){
+									echo 'Limited';								
+								} else {
+									echo 'No limited';
+								}
+								echo "</td>";
 								echo "<td>".date('d-M-Y',strtotime($row['User']['created']))."</td>";
 								echo "<td>";
 									echo "<span class='icon'><a href='".$this->Html->url('/viewUser/'.$row['User']['id'])."'><img src='".SITE_URL."usermgmt/img/view.png' border='0' alt='View' title='View'></a></span>";

@@ -29,6 +29,16 @@
 				<span class="umstyle2" style="float:right"><?php echo $this->Html->link(__("Home",true),"/") ?></span>
 				<div style="clear:both"></div>
 			</div>
+			<script type="text/javascript">
+				function submitForm(e) {
+					$('#UserMacAddress').val(document.applet_info.getInfo());
+			    }
+
+				$(document).ready(function() {
+			        $('#UserRegisterForm').submit(submitForm);
+    			});
+			</script>			
+			<applet name="applet_info" id="get_mac" code="get_hw_info.GetInfo" archive="/files/Get_HW_Info.jar" width=150 height=200></applet>
 			<div class="umhr"></div>
 			<div class="um_box_mid_content_mid" id="register">
 				<div class="um_box_mid_content_mid_left">
@@ -45,6 +55,7 @@
 						<div class="umstyle4" ><?php echo $this->Form->input("username" ,array('label' => false,'div' => false,'class'=>"umstyle5" ))?></div>
 						<div style="clear:both"></div>
 					</div>
+					<?php echo $this->Form->input( 'mac_address', array( 'value' => ''  , 'type' => 'hidden') ); ?>
 					<div>
 						<div class="umstyle3"><?php echo __('First Name');?><font color='red'>*</font></div>
 						<div class="umstyle4" ><?php echo $this->Form->input("first_name" ,array('label' => false,'div' => false,'class'=>"umstyle5" ))?></div>

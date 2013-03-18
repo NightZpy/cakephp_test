@@ -20,22 +20,22 @@ CREATE TABLE IF NOT EXISTS `users` (
   `first_name` varchar(100) DEFAULT NULL,
   `last_name` varchar(100) DEFAULT NULL,
   `email_verified` int(1) DEFAULT '0',
-  `active` int(1) NOT NULL DEFAULT '0',  
-  `is_certified` int(1) NOT NULL DEFAULT '0',
-  `mac_address` varchar(17) NULL,
+  `active` int(1) NOT NULL DEFAULT '0',
+  `is_certified` tinyint(1) DEFAULT '0',
+  `mac_address` varchar(17) DEFAULT NULL,
   `ip_address` varchar(50) DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY (`mac_address`),
+  UNIQUE KEY `mac_address` (`mac_address`),
   KEY `user` (`username`),
   KEY `mail` (`email`),
   KEY `users_FKIndex1` (`user_group_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 
-INSERT INTO `users` (`id`, `user_group_id`, `username`, `password`, `salt`, `email`, `first_name`, `last_name`, `email_verified`, `active`, `ip_address`, `created`, `modified`) VALUES
-(1, 1, 'admin', '365caef7fccbdb1ee711f084be9317a7', '1e6d99570a4d37cc29b18c4a6b06e6ed', 'admin@admin.com', 'Admin', '', 1, 1, '', now(), now());
+INSERT INTO `users` (`id`, `user_group_id`, `username`, `password`, `salt`, `email`, `first_name`, `last_name`, `email_verified`, `active`, 'is_certified', `mac_address`, `ip_address`, `created`, `modified`) VALUES
+(1, 1, 'admin', '365caef7fccbdb1ee711f084be9317a7', '1e6d99570a4d37cc29b18c4a6b06e6ed', 'admin@admin.com', 'Admin', '', 1, 1, '0', '', '', now(), now());
 
 
 CREATE TABLE IF NOT EXISTS `user_groups` (
