@@ -34,7 +34,8 @@ class User extends UserMgmtAppModel {
 	 *
 	 * @var array
 	 */
-	var $hasMany = array('LoginToken'=>array('className'=>'Usermgmt.LoginToken','limit' =>1));
+	var $hasMany = array('LoginToken'=>array('className'=>'Usermgmt.LoginToken','limit' =>1), 'Machines' => array('className' => 'UsersMachines'));
+	//var $hasMany = array('Usermgmt.UsersMachines');
 	/**
 	 * model validation array
 	 *

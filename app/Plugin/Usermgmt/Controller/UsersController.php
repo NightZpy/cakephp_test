@@ -96,6 +96,10 @@ class UsersController extends UserMgmtAppController {
 						return;
 					}
 				}
+				//$macs = $user['Machines'];
+				//$macs = $this->User->Machines->findByUniqueId();	
+				//if(empty($macs)) $this->Session->setFlash(__('<pre>Vacio</pre>'));
+
 				// check for inactive account
 				if ($user['User']['id'] != 1 and $user['User']['active']==0) {
 					$this->Session->setFlash(__('Sorry your account is not active, please contact to Administrator'));
@@ -113,18 +117,15 @@ class UsersController extends UserMgmtAppController {
 						$this->Session->setFlash('¡Por favor, debe permitir el acceso al Applet para poder registrar su identificador único!');
 						return;
 					} else {
-						if(empty($user['User']['mac_address'])){						
-							$user2 = $this->User->findByMacAddress($macAddress);
-							if(!empty($user2)){
-								$this->Session->setFlash('¡Equipo no autorizado, ya se encuentra registrado para otro usuario!');
-								return;
-							} else {
-								$this->User->id = $user['User']['id'];
-								$this->User->saveField('mac_address', $macAddress);								
-							}
-						}elseif($user['User']['mac_address'] !== $macAddress){
-							$this->Session->setFlash(__('The user must connect to the machine allowed! '));
+						$fields = array('conditions' => array('Machines.unique_id' => $macAddress, 'Machines.is_active' => '1'));
+						//$userMac = $this->User->Machines->findByUniqueId($macAddress);
+						$userMac = $this->User->Machines->find('first', $fields);
+						if(empty($userMac)) {
+							$this->Session->setFlash(__('¡El usuario no se encuentra en una maquina permitida!'));
 							return;
+						} else {
+							$this->User->id = $user['User']['id'];
+							$this->User->saveField('mac_address', $macAddress);	
 						}
 					}									
 				}								

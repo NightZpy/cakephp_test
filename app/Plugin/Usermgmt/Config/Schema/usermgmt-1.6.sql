@@ -37,6 +37,16 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`id`, `user_group_id`, `username`, `password`, `salt`, `email`, `first_name`, `last_name`, `email_verified`, `active`, 'is_certified', `mac_address`, `ip_address`, `created`, `modified`) VALUES
 (1, 1, 'admin', '365caef7fccbdb1ee711f084be9317a7', '1e6d99570a4d37cc29b18c4a6b06e6ed', 'admin@admin.com', 'Admin', '', 1, 1, '0', '', '', now(), now());
 
+CREATE TABLE IF NOT EXISTS `users_machines` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `unique_id` varchar(100) NOT NULL,
+  `is_active` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `unique_id` (`unique_id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
 
 CREATE TABLE IF NOT EXISTS `user_groups` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -141,3 +151,9 @@ INSERT INTO `user_group_permissions` (`id`, `user_group_id`, `controller`, `acti
 (76, 1, 'Users', 'activatePassword', 1),
 (77, 2, 'Users', 'activatePassword', 1),
 (78, 3, 'Users', 'activatePassword', 1);
+
+--
+-- Filtros para la tabla `users_machines`
+--
+ALTER TABLE `users_machines`
+  ADD CONSTRAINT `users_machines_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
